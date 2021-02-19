@@ -1,0 +1,44 @@
+/* warning status */
+td span.warning{
+  background-color: #f89706;
+  color: white;
+  border-radius: 18px;
+  /* background: -webkit-gradient(linear, left top, right top, color-stop(50%,#141414), color-stop(50%,#333), color-stop(0%,#888)); */
+
+  /*border-radius: 50px;
+  
+  padding: 0; */
+  padding: 4px;
+  height: 18px;
+  /* font-weight: bolder; */
+}
+
+/* status danger */
+td span.danger{
+  background-color: #f81606;
+  color: white;
+  border-radius: 18px;
+  /* background: -webkit-gradient(linear, left top, right top, color-stop(50%,#141414), color-stop(50%,#333), color-stop(0%,#888)); */
+
+  /*border-radius: 50px;
+  
+  padding: 0; */
+  padding: 4px;
+  height: 18px;
+  /* font-weight: bolder; */
+}
+
+/* status danger */
+td span.success{
+  background-color: #047248;
+  color: white;
+  border-radius: 18px;
+  /* background: -webkit-gradient(linear, left top, right top, color-stop(50%,#141414), color-stop(50%,#333), color-stop(0%,#888)); */
+
+  /*border-radius: 50px;
+  
+  padding: 0; */
+  padding: 4px;
+  height: 18px;
+  /* font-weight: bolder; */
+}
