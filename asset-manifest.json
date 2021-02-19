@@ -1,26 +1,25 @@
 {
   "files": {
-    "main.css": "/qr-code-scan-sample/static/css/main.8c8b27cf.chunk.css",
-    "main.js": "/qr-code-scan-sample/static/js/main.b4423049.chunk.js",
-    "main.js.map": "/qr-code-scan-sample/static/js/main.b4423049.chunk.js.map",
-    "runtime-main.js": "/qr-code-scan-sample/static/js/runtime-main.03f1f6eb.js",
-    "runtime-main.js.map": "/qr-code-scan-sample/static/js/runtime-main.03f1f6eb.js.map",
+    "main.css": "/qr-code-scan-sample/static/css/main.dd19421c.chunk.css",
+    "main.js": "/qr-code-scan-sample/static/js/main.687c7dd8.chunk.js",
+    "main.js.map": "/qr-code-scan-sample/static/js/main.687c7dd8.chunk.js.map",
+    "runtime-main.js": "/qr-code-scan-sample/static/js/runtime-main.3e9c22a4.js",
+    "runtime-main.js.map": "/qr-code-scan-sample/static/js/runtime-main.3e9c22a4.js.map",
     "static/css/2.150d169a.chunk.css": "/qr-code-scan-sample/static/css/2.150d169a.chunk.css",
-    "static/js/2.7aca4ec6.chunk.js": "/qr-code-scan-sample/static/js/2.7aca4ec6.chunk.js",
-    "static/js/2.7aca4ec6.chunk.js.map": "/qr-code-scan-sample/static/js/2.7aca4ec6.chunk.js.map",
-    "static/js/3.d8c15ef6.chunk.js": "/qr-code-scan-sample/static/js/3.d8c15ef6.chunk.js",
-    "static/js/3.d8c15ef6.chunk.js.map": "/qr-code-scan-sample/static/js/3.d8c15ef6.chunk.js.map",
+    "static/js/2.06c86a18.chunk.js": "/qr-code-scan-sample/static/js/2.06c86a18.chunk.js",
+    "static/js/2.06c86a18.chunk.js.map": "/qr-code-scan-sample/static/js/2.06c86a18.chunk.js.map",
+    "static/js/3.dd5ca1ae.chunk.js": "/qr-code-scan-sample/static/js/3.dd5ca1ae.chunk.js",
+    "static/js/3.dd5ca1ae.chunk.js.map": "/qr-code-scan-sample/static/js/3.dd5ca1ae.chunk.js.map",
     "index.html": "/qr-code-scan-sample/index.html",
     "static/css/2.150d169a.chunk.css.map": "/qr-code-scan-sample/static/css/2.150d169a.chunk.css.map",
-    "static/css/main.8c8b27cf.chunk.css.map": "/qr-code-scan-sample/static/css/main.8c8b27cf.chunk.css.map",
-    "static/js/2.7aca4ec6.chunk.js.LICENSE.txt": "/qr-code-scan-sample/static/js/2.7aca4ec6.chunk.js.LICENSE.txt",
-    "static/media/logo.6ce24c58.svg": "/qr-code-scan-sample/static/media/logo.6ce24c58.svg"
+    "static/css/main.dd19421c.chunk.css.map": "/qr-code-scan-sample/static/css/main.dd19421c.chunk.css.map",
+    "static/js/2.06c86a18.chunk.js.LICENSE.txt": "/qr-code-scan-sample/static/js/2.06c86a18.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.03f1f6eb.js",
+    "static/js/runtime-main.3e9c22a4.js",
     "static/css/2.150d169a.chunk.css",
-    "static/js/2.7aca4ec6.chunk.js",
-    "static/css/main.8c8b27cf.chunk.css",
-    "static/js/main.b4423049.chunk.js"
+    "static/js/2.06c86a18.chunk.js",
+    "static/css/main.dd19421c.chunk.css",
+    "static/js/main.687c7dd8.chunk.js"
   ]
 }
