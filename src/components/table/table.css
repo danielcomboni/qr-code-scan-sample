@@ -47,7 +47,7 @@ Max width before this PARTICULAR table gets nasty
 This query will take effect for any screen smaller than 760px
 and also iPads specifically.
 */
-@media only screen and (max-width: 760px),
+@media only screen and (max-width: 700px),
   (min-device-width: 768px) and (max-device-width: 1024px) {
   /* Force table to not be like tables anymore */
   table,
@@ -93,7 +93,7 @@ and also iPads specifically.
   /*
 	Label the data
 	*/
-  td:nth-of-type(1):before {
+  /*td:nth-of-type(1):before {
     content: "First Name";
   }
   td:nth-of-type(2):before {
@@ -122,5 +122,5 @@ and also iPads specifically.
   }
   td:nth-of-type(10):before {
     content: "Arbitrary Data";
-  }
+  } */
 }

@@ -1,6 +1,8 @@
+import { Console } from 'console';
 import { Component } from 'react';
 
 import './table.css'
+import CSS from 'csstype'
 import TableBody, { ITableBodyProps } from './TableBody';
 import { ITDAttributes } from './TableData';
 import TableHead, { ITableHeadNamesProps } from './TableHeader';
