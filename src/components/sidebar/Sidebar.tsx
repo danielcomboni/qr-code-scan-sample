@@ -1,5 +1,4 @@
-import React, { Component, ReactNode } from 'react'
-import AppRouter from '../../router';
+import { Component } from 'react'
 import KeyValueMap, { IKeyValueMap } from '../../Utils/collections/Map';
 
 import { Link } from "react-router-dom";
@@ -11,14 +10,12 @@ export interface ISidebarState {
 }
 
 let navs = new KeyValueMap<string, string>();
-navs.put('applications', 'Applications');
-navs.put('scan', 'Scan QR code');
+// navs.put('applications', 'ApplicationsSFGB.LKJF4SBG');
+// navs.put('scan', 'Scan QR code');
 
 const sidebarItems: ISidebarState = {
     sidebarItems: navs
 }
-
-
 
 class Sidebar extends Component<{}, ISidebarState> {
 
@@ -36,9 +33,6 @@ class Sidebar extends Component<{}, ISidebarState> {
     styleLink = (): string => {
         return `textDecoration: 'none', display: 'block', color: 'whitesmoke', padding: '16px', overflowWrap: 'break-word'`
     }
-    componentDidMount() {
-
-    }
 
     render() {
         return (
@@ -46,16 +40,18 @@ class Sidebar extends Component<{}, ISidebarState> {
             <div className="sidebar" id="sidebar">
 
                 <nav className="nav">
+
                     <ul>
                         <li>
-                            <Link className="link" to="/" style={{  }} >Applications</Link>
+                            <Link className="link" to="/">Applications</Link>
                         </li>
-                        
+
                         <li>
                             <Link className="link" to="/scan">Scan QR code</Link>
                         </li>
 
                     </ul>
+
                 </nav>
 
             </div>

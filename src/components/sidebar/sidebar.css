@@ -20,6 +20,10 @@ div.sidebar {
   word-wrap: break-word;
 }
 
+.link {
+  word-break: break-all;
+}
+
 /* .sidebar a.active-2 {
   background-color: #4caf50;
   color: white;
