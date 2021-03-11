@@ -1,8 +1,6 @@
 
 
-import HomePage from './components/home/HomePage'
-import Main from './components/main/Main'
-// import "./App.css";
+
 import  './components/styles/scrollbar.css'
 import AppRouter from './router'
 

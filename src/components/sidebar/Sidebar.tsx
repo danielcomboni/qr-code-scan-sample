@@ -50,6 +50,10 @@ class Sidebar extends Component<{}, ISidebarState> {
                             <Link className="link" to="/scan">Scan QR code</Link>
                         </li>
 
+                        <li>
+                            <Link className="link" to="/transfer-form">Transfer form</Link>
+                        </li>
+
                     </ul>
 
                 </nav>

@@ -1,6 +1,5 @@
-import React, { Component } from "react";
-import Header from "../header/Header";
-// import "bootstrap/dist/css/bootstrap.min.css";
+import { Component } from "react";
+
 import 'bootstrap/dist/css/bootstrap.min.css'
 import '../header/header.css' // header is placed here because it has access to sidebar
 import './main.css'

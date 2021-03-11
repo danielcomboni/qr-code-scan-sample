@@ -5,6 +5,7 @@ import { faBars } from '@fortawesome/free-solid-svg-icons'
 const HamburgerButton = () => <FontAwesomeIcon icon={faBars} />
 
 class Header extends Component {
+    
     state = {
         sticky: '',
         role: {
@@ -14,6 +15,7 @@ class Header extends Component {
             displayUserNameAndRole: ''
         }
     }
+
     handleStickyHeader = () => {
         const elementId = "topnav";
         if (document.getElementById(elementId)) {
