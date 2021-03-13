@@ -5,9 +5,10 @@ import Main from "../main/Main";
 import Header from "../header/Header";
 import Sidebar from "../sidebar/Sidebar";
 import MainBody from "../main/MainBody";
+import './video.css'
 
 import * as ZXing from "@zxing/library";
-import { BrowserMultiFormatReader } from "@zxing/library";
+import { BrowserMultiFormatReader, PDF417Reader } from "@zxing/library";
 
 // dropdown list of cameras available
 const CameraSelectionPanel = () => {
@@ -24,16 +25,54 @@ const CameraSelectionPanel = () => {
 // video scan area
 
 const VideoCardPanel = ({ hideVideo, hideResult, result, deviceId, codeReader, cameras }: IScanQRCodeState) => {
+
+  const mystyle = {
+    position: "absolute",
+    top: "100px",
+    color: "#FFF",
+    textAlign: "center",
+    fontSize: "20px",
+    backgroundColor: "rgba(221, 221, 221, 0.3)",
+    width: "640px",
+    padding: "10px 0",
+    zIndex: "2147483647"
+  };
   return (
     <div className="card" hidden={hideVideo} id="video-card-id">
       <h5 className="card-header">Focus camera on barcode(qr code)</h5>
       <div className="card-body">
         <div>
+
           <video
             id="video"
             width="100%"
-            style={{ border: "0px solid gray" }}
-          ></video>
+            // style={{ border: "0px solid gray" }}
+            style={{ zIndex: 1 }}
+          >
+            {/* <div className="overlay"></div> */}
+
+            {/* <hr /> */}
+
+            {/* <div className="content-bottom"> */}
+            <h1>Heading</h1>
+            {/* <p>Lorem ipsum dolor sit amet, an his etiam torquatos. Tollit soleat phaedrum te duo, eum cu recteque expetendis neglegentur. Cu mentitum maiestatis persequeris pro, pri ponderum tractatos ei. Id qui nemore latine molestiae, ad mutat oblique delicatissimi pro.</p>
+            <button >Pause</button> */}
+            {/* </div> */}
+
+            {/* <div id="overlay-top"><hr></hr></div> */}
+
+          </video>
+
+
+          <div id="overlay" className="overlay-top"></div>
+
+          <div id="overlay-bottom" className="overlay-bottom"></div>
+
+          <div id="overlay-left" className="overlay-left"></div>
+
+          <div id="overlay-right" className="overlay-right"></div>
+
+
         </div>
       </div>
     </div>
@@ -64,7 +103,6 @@ interface IScanQRCodeState {
 
 class ScanQRCode extends Component<{}, IScanQRCodeState> {
 
-
   state: IScanQRCodeState = {
     hideVideo: false,
     hideResult: false,
@@ -72,6 +110,13 @@ class ScanQRCode extends Component<{}, IScanQRCodeState> {
     deviceId: '',
     codeReader: new BrowserMultiFormatReader(),
     cameras: new Promise<MediaDeviceInfo[]>(() => { })
+  }
+
+  crop = () => {
+    const video = document.getElementById("video")!;
+    const width = video.offsetWidth;
+    const height = video.offsetHeight;
+    console.log(width, height);
   }
 
   startScan = (): void => {
@@ -142,6 +187,8 @@ class ScanQRCode extends Component<{}, IScanQRCodeState> {
 
   render() {
     this.getAllCameras();
+    // this.crop();
+    
     return (
 
       <Main>
