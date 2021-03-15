@@ -8,7 +8,7 @@ import MainBody from "../main/MainBody";
 import './video.css'
 
 import * as ZXing from "@zxing/library";
-import { BrowserMultiFormatReader, PDF417Reader } from "@zxing/library";
+import { BrowserMultiFormatReader } from "@zxing/library";
 
 // dropdown list of cameras available
 const CameraSelectionPanel = () => {
@@ -49,20 +49,8 @@ const VideoCardPanel = ({ hideVideo, hideResult, result, deviceId, codeReader, c
             // style={{ border: "0px solid gray" }}
             style={{ zIndex: 1 }}
           >
-            {/* <div className="overlay"></div> */}
-
-            {/* <hr /> */}
-
-            {/* <div className="content-bottom"> */}
-            <h1>Heading</h1>
-            {/* <p>Lorem ipsum dolor sit amet, an his etiam torquatos. Tollit soleat phaedrum te duo, eum cu recteque expetendis neglegentur. Cu mentitum maiestatis persequeris pro, pri ponderum tractatos ei. Id qui nemore latine molestiae, ad mutat oblique delicatissimi pro.</p>
-            <button >Pause</button> */}
-            {/* </div> */}
-
-            {/* <div id="overlay-top"><hr></hr></div> */}
 
           </video>
-
 
           <div id="overlay" className="overlay-top"></div>
 
@@ -104,8 +92,8 @@ interface IScanQRCodeState {
 class ScanQRCode extends Component<{}, IScanQRCodeState> {
 
   state: IScanQRCodeState = {
-    hideVideo: false,
-    hideResult: false,
+    hideVideo: true,
+    hideResult: true,
     result: '',
     deviceId: '',
     codeReader: new BrowserMultiFormatReader(),
